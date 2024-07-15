@@ -1,5 +1,5 @@
 Version: v1.7.3 
-  - name: dbt action
+   name: dbt action
   uses: mwhitaker/dbt-action@v1.7.3
   with:
     # dbt command
