@@ -1,5 +1,6 @@
-- name: dbt-action
-      uses: mwhitaker/dbt-action@master
+name: dbt-action
+    
+uses: mwhitaker/dbt-action@master
       with:
         dbt_command: "dbt run --profiles-dir ."
       env:
