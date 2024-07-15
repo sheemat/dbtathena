@@ -1,8 +1,12 @@
 name: dbt-action
-    
-uses: mwhitaker/dbt-action@master
-      with:
-        dbt_command: "dbt run --profiles-dir ."
-      env:
-        DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
-
+on: [push]
+jobs:
+  check-bats-version:
+       runs-on: ubuntu-latest
+       steps:
+          - uses: actions/checkout@v4    
+          - uses: mwhitaker/dbt-action@master
+            with:
+                 dbt_command: "dbt run --profiles-dir ."
+            env:
+                 DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
