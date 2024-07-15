@@ -1,0 +1,10 @@
+Version: v1.7.3 
+  - name: dbt action
+  uses: mwhitaker/dbt-action@v1.7.3
+  with:
+    # dbt command
+    dbt_command: # default is dbt run --profiles-dir .
+    # dbt project folder. Defaults to .
+    dbt_project_folder: # optional, default is .
+    # http_path for databricks
+    http_path: # optional
