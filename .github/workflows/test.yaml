@@ -6,9 +6,9 @@ jobs:
        steps:
           - name : Debug step
             run: echo "Hi World"
-          - uses: actions/checkout@v4    
-          - uses: mwhitaker/dbt-action@master
-            with:
-                 dbt_command: "dbt run --profiles-dir ."
-            env:
-                 DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
+#          - uses: actions/checkout@v4    
+#         - uses: mwhitaker/dbt-action@master
+#            with:
+#                 dbt_command: "dbt run --profiles-dir ."
+#            env:
+#                 DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
