@@ -6,6 +6,7 @@ jobs:
        steps:
           - name : Debug step
             run: echo "Hi World"
+            run: env
 #          - uses: actions/checkout@v4    
 #         - uses: mwhitaker/dbt-action@master
 #            with:
