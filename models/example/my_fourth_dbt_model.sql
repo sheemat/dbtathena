@@ -9,6 +9,6 @@
 ) }}
 
 
-select *, current_date + interval '0' day as exec_date
+select *, current_date + interval '1' day as exec_date
 from {{ ref('my_second_dbt_model') }}
 where id = 1
